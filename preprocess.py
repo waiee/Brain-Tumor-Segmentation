@@ -13,7 +13,7 @@ def getLargestCC(segmentation):
 
 # Input and output folder paths
 input_folder = "brain tumor dataset/images"
-output_folder = "brain tumor dataset/masks"
+output_folder = "brain tumor dataset/preprocess"
 
 # Ensure the output folder exists
 if not os.path.exists(output_folder):
@@ -27,7 +27,7 @@ for filename in os.listdir(input_folder):
 
     # Apply median blur
     blur_median = cv2.medianBlur(img,1)
-    
+
     # Sharpening
     blurred = cv2.GaussianBlur(img, (17, 17), 0)
     imgSharp = np.float32(img)
