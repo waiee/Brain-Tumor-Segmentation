@@ -12,8 +12,8 @@ def getLargestCC(segmentation):
     return largestCC.astype('uint8') * 255
 
 # Input and output folder paths
-input_folder = "Dataset/input/images"
-output_folder = "Dataset/output/images"
+input_folder = "brain tumor dataset/images"
+output_folder = "brain tumor dataset/masks"
 
 # Ensure the output folder exists
 if not os.path.exists(output_folder):
