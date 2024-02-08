@@ -56,7 +56,7 @@ for filename in os.listdir(input_folder):
     filtered = cv2.threshold(imgResult,hi_thresh,0,cv2.THRESH_TOZERO)[1]
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(9,9))
     img_close = cv2.morphologyEx(filtered, cv2.MORPH_CLOSE, kernel)
-    img_dilate = cv2.dilate(img_close, kernel)
+    # img_dilate = cv2.dilate(img_close, kernel)
 
 
     # Thresholding
