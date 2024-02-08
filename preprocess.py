@@ -27,7 +27,7 @@ for filename in os.listdir(input_folder):
 
     # Apply median blur
     blur_median = cv2.medianBlur(img,1)
-
+    
     # Sharpening
     blurred = cv2.GaussianBlur(img, (17, 17), 0)
     imgSharp = np.float32(img)
